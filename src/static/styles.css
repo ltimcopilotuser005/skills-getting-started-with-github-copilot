@@ -85,16 +85,36 @@ section h3 {
   color: #555;
 }
 
+
 .participants-list {
-  list-style-type: disc;
-  padding-left: 25px;
+  list-style-type: none;
+  padding-left: 0;
   margin-top: 8px;
+}
+
+.participants-list.no-bullets {
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .participants-list li {
   padding: 4px 0;
   color: #666;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete-icon {
+  color: #c62828;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+.delete-icon:hover {
+  color: #a31515;
 }
 
 .no-participants {
